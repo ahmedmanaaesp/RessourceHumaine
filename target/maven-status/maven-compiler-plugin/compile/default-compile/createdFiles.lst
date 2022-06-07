@@ -1,0 +1,5 @@
+com\esprit\microservice\employeservice\Employe.class
+com\esprit\microservice\employeservice\EmployeRestAPI.class
+com\esprit\microservice\employeservice\EmployeService.class
+com\esprit\microservice\employeservice\EmployeApplication.class
+com\esprit\microservice\employeservice\EmployeRepository.class
