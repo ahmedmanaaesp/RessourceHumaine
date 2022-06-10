@@ -19,7 +19,7 @@ public class EmployeApplication {
 	 @Bean
 	    ApplicationRunner init(EmployeRepository repository) {
 	        return args -> {
-	            Stream.of("Mariem", "Sarra", "Mohamed").forEach(nom -> {
+	            Stream.of("Ahmed", "Saif", "Houmem").forEach(nom -> {
 	                repository.save(new Employe(nom));
 	            });
 	            repository.findAll().forEach(System.out::println);

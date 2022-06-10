@@ -1,13 +1,21 @@
 package com.esprit.microservice.employeservice;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+
 
 @Service
 public class EmployeService {
 
 	@Autowired
 	private EmployeRepository employeRepository;
+	
+	public List<Employe> findAllEmployees() {
+        return employeRepository.findAll();
+    }
 
 	public Employe addEmploye(Employe employe) {
 		return employeRepository.save(employe);
